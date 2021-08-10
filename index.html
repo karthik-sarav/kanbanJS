@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Kanban board with HTML CSS and Javascript">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="vendors/grid.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
+        rel="stylesheet">
+    <title>Kanban Board</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="row">
+                <h2 class="header-title">Kanban Board</h2>
+            </div>
+        </nav>
+    </header>
+
+    <section class="section-input">
+        <form>
+            <label class="input-label" for="titleInput">Title:</label>
+            <input class="input-field" type="text" name="title" id="titleInput">
+
+            <label class="input-label" for="descriptionInput">Description:</label>
+            <input class="input-field" type="text" name="description" id="descriptionInput">
+
+            <a class="btn btn-full" id="add-btn" href="#">Add</a>
+            <a class="btn btn-full" id="delete-btn" href="#">Delete All</a>
+        </form>
+    </section>
+
+    <section class="section-board" id="boards">
+
+    </section>
+    <script src="https://code.jquery.com/git/jquery-3.x-git.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
