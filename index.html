@@ -35,6 +35,48 @@
     </section>
 
     <section class="section-board" id="boards">
+        <div class="col span-1-of-4 box boardContainer" id="Open">
+            <div class="boardHeader">
+                <h3>Open</h3>
+                <div class="dropdown">
+                    <button class="dropbtn">Sort by</button>
+                    <div class="dropdown-content">
+                        <a href="#" id="open-sort-id" onclick="sortOpen(this)">Id</a>
+                        <a href="#" id="open-sort-title" onclick="sortOpen(this)">Title</a>
+                        <a href="#" id="open-sort-priority" onclick="sortOpen(this)">Priority</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Filter</button>
+                    <div class="dropdown-content">
+                        <a href="#" id="open-filter-high" onclick="filterOpen(this)">High</a>
+                        <a href="#" id="open-sort-medium" onclick="filterOpen(this)">Medium</a>
+                        <a href="#" id="open-sort-low" onclick="filterOpen(this)">Low</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropzone">
+            </div>
+        </div>
+
+        <div class="col span-1-of-4 box boardContainer" id="Progress">
+            <h3>Progress</h3>
+            <div class="dropzone">
+            </div>
+        </div>
+
+        <div class="col span-1-of-4 box boardContainer" id="Testing">
+            <h3>Testing</h3>
+            <div class="dropzone">
+            </div>
+        </div>
+
+        <div class="col span-1-of-4 box boardContainer" id="Completed">
+            <h3>Completed</h3>
+            <div class="dropzone">
+            </div>
+        </div>
 
     </section>
     <script src="https://code.jquery.com/git/jquery-3.x-git.js"></script>
